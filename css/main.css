@@ -1,0 +1,824 @@
+@font-face {
+    font-family: myriadpro-semibold-c;
+    src: url(../fonts/Myriad-Pro-Semibold-Condensed_31644.woff);
+}
+@font-face {
+    font-family: myriadpro-bold;
+    src: url(../fonts/myriadpro-bold.woff);
+}
+@font-face {
+    font-family: myriadpro-light;
+    src: url(../fonts/myriadpro-light.woff);
+}
+@font-face {
+    font-family: myriadpro-regular;
+    src: url(../fonts/myriadpro-regular.woff);
+}
+@font-face {
+    font-family: myriadpro-semibold;
+    src: url(../fonts/myriadpro-semibold.woff);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	width: 100%;
+}
+body{
+	width: 100%;
+	font-size: 16px;
+	font-family: "myriadpro-regular", serif;
+}
+
+@media (max-width: 700px) { 
+p{
+	font-family: "myriadpro-regular",serif;
+	font-size: 1.5em;
+}
+
+h1{
+	font-family: "myriadpro-bold",serif;
+	font-size: 1.8em;
+}
+
+.show-xs{
+	display: block;
+}
+.hide-xs{
+	display: none;
+}
+
+.mainbody{
+	width: 100%;
+	margin: 0 auto;
+}
+.container{
+	width: 100%;
+}
+.one{
+height: 70px;
+}
+
+.one,.two,.three,.four,.five,.six,.seven{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.one .above-nav.show-xs .alt-1,{
+position: relative;
+background-color: white;
+}
+.one .above-nav.show-xs .alt-2{
+position: absolute;
+width: 100%;
+height: 376px;
+top: 0;
+left: 0;
+display: none;
+columns: white;
+padding: 16px;
+}
+.above-nav{
+	position: relative;
+}
+.one .above-nav.show-xs .alt-2 ul{
+	margin-top: 56px;
+	margin-bottom: 8px;
+}
+.one .above-nav.show-xs .alt-2 li{
+	color: white;
+	display: block;
+	font-size: 1.6em;
+	padding: 6px;
+	border-radius: 3px;
+}
+.one .above-nav.show-xs .alt-2 li:hover{
+	background-color: red;
+	color: white;
+}
+.menu-icon{
+	position: absolute;
+	z-index: 3;
+	right: 10px;
+	top: 10px;
+	padding: 10px;
+	color: white;
+	background-color: red;
+	border-radius: 3px;
+}
+.menu-icon:hover{
+	background-color: white;
+	border: 1px solid red;
+	color: red; 
+}
+
+.menu-active{
+	z-index: 2;
+	display: block !important;
+	background-color: black;
+}
+.one .show-xs .alt-1 img{
+	height: 100px;
+	display: block;
+	margin: 0 auto;
+
+}
+
+
+.p-24{
+	margin-right: 0px;
+	margin-left: 0px;
+
+}
+.p-24:after{
+	content: "";
+	clear: both;
+	display: table;
+}
+.clear{
+
+}
+.clear:after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+
+.two{
+	height: 300px;
+	background-image: url("../images/banner.png");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+.attach-2{
+	height: 300px;
+	position: relative;
+}
+.top-1{
+	position: absolute;
+	top: 100px;
+	left: 5px;
+}
+.top-2{
+	position: absolute;
+	top: 200px;
+	left: 5px;
+}
+.salute-img{
+	position: absolute;
+	right: 0px;
+	height: auto;
+	width: 85%;
+	bottom: 0;
+}
+
+.para-2{
+	color: white;
+	padding-left: 8px;
+	font-size: 1em;
+	display: inline-block;
+	vertical-align: middle;
+}
+.top-1 .alt-1,.top-1 .alt-2,.top-1 .alt-3{
+	height: 20px;
+	width: 130px;
+	display: inline-block;
+	position: relative;
+}
+.top-1 .alt-5{
+	padding-left: 50px;
+}
+.top-1 .alt-6{
+	padding-left:100px;
+}
+
+.top-1 .alt-1,.top-1 .alt-2,.top-1 .alt-3{
+	background-image: url("../images/banner_right_shape.png");
+	background-size: 100% 100%;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+.top-1 .alt-2{
+	width: 140px;
+	background-size: 320px 100%;
+}
+.top-1 .alt-1::before,.top-1 .alt-2::before,.top-1 .alt-3::before{
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: 6px;
+	background-repeat: no-repeat;
+	left: -6px;
+	background-image: url("../images/banner_left_shape.png");
+	background-size: 100% 27px;
+}
+
+.top-2 .para-2{
+	color: red;
+	font-size: 1em;
+}
+
+.top-2 .alt-1{
+	height: 20px;
+	width: 225px;
+	display: inline-block;
+	position: relative;
+	color: black;
+}
+.top-2 .alt-2{
+	height: 20px;
+	width: 170px;
+	display: inline-block;
+	position: relative;
+	color: black;
+}
+
+.top-2 .alt-5{
+	padding-left:100px;
+
+}
+
+.top-2 .alt-1,.top-2 .alt-2{
+	background-image: url("../images/banner_right_shape_white.png");
+	background-size: 100% 100%;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+.top-2 .alt-1::before,.top-2 .alt-2::before{
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: 6px;
+	background-repeat: no-repeat;
+	left: -6px;
+	background-image: url("../images/banner_left_shape_white.png");
+	background-size: 100% 27px;
+}
+
+
+
+
+.three{
+
+}
+.four{
+
+}
+.five{
+
+}
+
+}
+
+
+
+
+@media (min-width: 922px) { 
+	body{
+		font-size: 12px;
+	}
+.show-md{
+	display: block;
+}
+.hide-md{
+	display: none;
+}
+.mainbody{
+	width: 922px;
+	margin: 0 auto;
+}
+
+.one,.two,.three,.four,.five,.six,.seven{
+	width: 874px;
+	margin: 0 auto;
+}
+
+.p-24{
+	margin-right: 24px;
+	margin-left: 24px;
+}
+.p-24:after{
+	content: "";
+	clear: both;
+	display: table;
+}
+.clear{
+
+}
+.clear:after{
+		content: "";
+	clear: both;
+	display: table;
+}
+
+.container{
+	width: 100%;
+}
+.above-nav{
+	height: 65px;
+	
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+
+}
+.above-nav .alt-1,.above-nav .alt-3{
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+.above-nav .alt-3{
+	float: right;
+}
+.above-nav .alt-2{
+	width: 40%;
+	float: left;
+}
+
+.above-nav .alt-2 img{
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+	display: block;
+}
+.above-nav .alt-1 img,.above-nav .alt-3 img{
+	vertical-align: middle;
+	height: 30px;
+}
+.above-nav .alt-3 span{
+	padding: 2px;
+	font-size: 1.5em;
+
+}
+.inline-right{
+	display: inline-block;
+	float: right;
+	height: 100%;
+	vertical-align: middle;
+}
+.navbar{
+	height: 40px;
+	background-color: #DBE0DD;
+}
+.navbar .p-24{
+	height: 100%;
+	position: relative;
+}
+.navbar .alt-1{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 38%;
+}
+.navbar .alt-2{
+	width: 38%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+.navbar span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1em;
+	
+}
+
+.navbar span:hover{
+	color: grey;
+}
+.navbar .alt-1 span{
+		padding: 6px 16px 6px 0px;
+}
+.navbar .alt-2 span{
+		padding: 6px 0px 6px 16px;
+}
+
+.alt-1 span:nth-child(1){
+	padding: 0;
+}
+
+.one{
+	height: 105px;
+}
+.two{
+	height: 400px;
+	background-image: url("../images/banner.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.attach-2{
+	height: 400px;
+	position: relative;
+}
+.top-1{
+	position: absolute;
+	top: 70px;
+	left: 30px;
+}
+.top-2{
+	position: absolute;
+	top: 220px;
+	left: 150px;
+}
+.salute-img{
+	position: absolute;
+	right: 0px;
+	height: 400px;
+	width: auto;
+}
+
+.para-2{
+	color: white;
+	padding-left: 16px;
+	font-size: 1.8em;
+	display: inline-block;
+	vertical-align: middle;
+}
+.top-1 .alt-1,.top-1 .alt-2,.top-1 .alt-3{
+	height: 32px;
+	width: 300px;
+	display: inline-block;
+	position: relative;
+}
+.top-1 .alt-5{
+	padding-left: 100px;
+}
+.top-1 .alt-6{
+	padding-left:200px;
+}
+
+.top-1 .alt-1,.top-1 .alt-2,.top-1 .alt-3{
+	background-image: url("../images/banner_right_shape.png");
+	background-size: 300px 100%;
+	background-position: -126px 0px;
+	background-repeat: no-repeat;
+}
+.top-1 .alt-2{
+	width: 320px;
+	background-size: 320px 100%;
+}
+.top-1 .alt-1::before,.top-1 .alt-2::before,.top-1 .alt-3::before{
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: 15px;
+	background-repeat: no-repeat;
+	left: -15px;
+	background-image: url("../images/banner_left_shape.png");
+	background-size: 100% 35px;
+}
+
+.top-2 .para-2{
+	color: red;
+	font-size: 1.6em;
+}
+
+.top-2 .alt-1{
+	height: 30px;
+	width: 410px;
+	display: inline-block;
+	position: relative;
+	color: black;
+}
+.top-2 .alt-2{
+	height: 30px;
+	width: 340px;
+	display: inline-block;
+	position: relative;
+	color: black;
+}
+
+.top-2 .alt-5{
+	padding-left:100px;
+
+}
+
+.top-2 .alt-1,.top-2 .alt-2{
+	background-image: url("../images/banner_right_shape_white.png");
+	background-size: 100% 100%;
+	background-position: -126px 0px;
+	background-repeat: no-repeat;
+}
+
+.top-2 .alt-1::before,.top-2 .alt-2::before{
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: 15px;
+	background-repeat: no-repeat;
+	left: -15px;
+	background-image: url("../images/banner_left_shape_white.png");
+	background-size: 100% 35px;
+}
+
+.three{
+	height: 93px;
+	background-color: lightgrey;
+}
+.three .alt-1,.three .alt-2,.three .alt-3{
+	width: 33.3%;
+	float: left;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.banner-center{
+	width: 250px;
+	margin: 0 auto;
+}
+.banner{
+	width: 30%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.banner img{
+	width: 80%;
+	margin-left: 8px;
+}
+.banner-2{
+	display: inline-block;
+	vertical-align: middle;
+}
+.banner-2 div:nth-child(1){
+	font-size: 2.4em;
+
+}
+.banner-2 div:nth-child(2){
+		font-size: 1.3em;
+		color: red;
+		font-weight: 900;
+
+}
+.four{
+	height: 500px;
+}
+.four .alt-1,.four .alt-2,.four .alt-3{
+	width: 33.3%;
+	float: left;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.four .alt-1 .card{
+	background-image: url("../images/role_impact_ic.png");
+	background-repeat: no-repeat;
+	background-size: 33%;
+	background-position: 181px 171px;
+}
+.four .alt-2 .card{
+	background-image: url("../images/our_service_ic.png");
+	background-repeat: no-repeat;
+	background-size: 33%;
+	margin: 0 auto;
+	background-position: 181px 206px;
+}
+.four .alt-3 .card{
+	background-image: url("../images/get_involved_ic.png");
+	background-repeat: no-repeat;
+	background-size: 33%;
+	position: relative;
+	float: right;
+	background-position: 181px 180px;
+}
+.card{
+	width: 270px;
+	height: 300px;
+	box-shadow: grey 0px 0px 10px;
+}
+
+.card .header img{
+	width: 100%;
+	padding: 16px 16px 8px 16px;
+}
+.card .content span{
+	width: 100%;
+	display: block;
+	text-align: center;
+	color: red;
+	padding:0px 16px 0px 16px;
+	font-size: 1.3em;
+}
+.card .content p{
+	width: 74%;
+	font-size: 1.1em;
+	padding: 8px 0px 0px 16px;
+}
+.card .footer button{
+	margin-left: 16px;
+}
+.four-banner{
+	height:  80px;
+	box-shadow: grey 0px 0px 10px;
+}
+.four-banner .alt-1{
+	width: 40%;
+	height: 100%;
+	float: left;
+	padding: 20px 48px;
+	position: relative;
+	overflow: hidden;
+	color: white;
+}
+
+.four-banner .alt-1 div:nth-child(1){
+	margin: 0 auto;
+	vertical-align: middle;
+	height: 100%;
+
+}
+.four-banner .alt-1 div:nth-child(1) p{
+	font-size: 1.2em;
+}
+.four-banner .alt-1:after{
+		content: " ";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        left: -51px;
+        z-index: -1;
+        top: 0;
+        background: darkgrey;
+        transform-origin: bottom left;
+        -ms-transform: skew(-28deg,0deg);
+        -webkit-transform: skew(-28deg,0deg);
+        transform: skew(28deg,0deg);
+}
+.four-banner .alt-2{
+	width: 60%;
+	padding: 0;
+	float: left;
+}
+.four-banner .alt-2 div{
+	width: 45%;
+	height: 100%;
+	float: right;
+	display: inline-block;
+	padding: 16px;
+}
+.four-banner .alt-2 div:nth-child(1) span{
+	width: 170px;
+	height: 50px;
+	background-image: url("../images/db.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	font-size: 1.7em;
+	padding: 14px 32px 0px 44px;
+	text-align: bottom;
+}
+.four-banner .alt-2 div:nth-child(2){
+	height: 100%;
+	width: 55%;
+	margin-top: 6px;
+	font-size: 1.2em;
+	text-align: center;
+	padding-left: 0;
+}
+
+.five{
+	height: 350px;
+	background-repeat: no-repeat;
+	background-image: url("../images/event_bg.png");
+	background-size: 100% 100%;
+}
+.five .p-24{
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+.five .alt-1,.five .alt-2{
+	width: 50%;
+	float: left;
+}
+.five .alt-1 h4{
+	padding-top: 8px;
+	font-family: "myriadpro-semibold",serif;
+}
+.five .alt-1 p,h1{
+	padding-top: 2px;
+}
+.five .alt-2 p,.five .alt-2 h1,.five .alt-2 h2{
+	padding-top: 2px;
+	text-align: center;
+}
+.btn{
+	margin-top: 8px;
+	padding: 8px;
+	background-color: red;
+	border-radius: 2px;
+	border:none;
+	color: white;
+	font-family: "myriadpro-semibold",serif;
+}
+.five .alt-6{
+	width: 250px;
+	background-color: #404040;
+	padding: 16px;
+	float: right;
+}
+.five .alt-6 input,.five .alt-6 textarea{
+	padding: 2px;
+	margin-top: 8px;
+}
+.five .alt-6{
+	color: white;
+}
+
+.five .alt-3{
+	width: 50%;
+	float: left;
+	padding: 0;
+}
+.five .alt-4{
+	width: 50%;
+	float: left;
+}
+.five .alt-4 input{
+	width: 100%;
+}
+
+.five .alt-2 form input,.five .alt-2 form textarea{
+	width: 100%;
+	color: black;
+}
+.five .alt-2 form,.five .alt-2  button{
+	margin: 0 auto;
+	margin-top: 8px;
+	display: block;
+}
+.six{
+	height: 320px;
+	background-repeat: no-repeat;
+	background-image: url("../images/contact_us_bg.png");
+	background-size: 100% 100%;
+	padding-top: 48px;
+}
+.six .alt-1,.six .alt-2{
+	width: 50%;
+	float: left;
+}
+
+.six p,.six h1,.six h2,.six input{
+	color: white;
+	width: 90%;
+	font-family: "myriadpro-regular",serif;
+}
+
+.six input{
+	padding: 2px;
+	margin-top: 8px;
+}
+.six .alt-2 img{
+	width: 350px;
+	padding: 4px;
+	background-color: white;
+	float: right;
+}
+.six .alt-3{
+	width: 50%;
+	float: left;
+	padding: 0;
+}
+.six .alt-4{
+	width: 50%;
+	float: left;
+}
+.seven{
+	padding: 8px;
+	background-color: #404040;
+	color: white;
+}
+}
+
+@media (min-width: 1200px) { 
+.mainbody{
+	width: 1200px;
+	margin: 0 auto;
+}
+.one,.two,.three,.four,.five,.six,.seven{
+	width: 1100px;
+	margin: 0 auto;
+}
+.p-24{
+	margin-right: 50px;
+	margin-left: 50px;
+}
+.top-1{
+
+	left: 40px;
+}
+.top-2{
+
+	left: 150px;
+}
+}

@@ -589,9 +589,9 @@ padding: 16px;
 
 
 @media (min-width: 922px) { 
-	body{
-		font-size: 12px;
-	}
+body{
+		font-size: 13px;
+}
 .show-md{
 	display: block;
 }
